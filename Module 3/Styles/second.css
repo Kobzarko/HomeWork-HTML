@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 5px;
+  background: url(../Images/imageBack.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* HomeWork  */
+
+h1 {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* -------------aside------------------- */
+
+.aside {
+  background-color: #808080;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 100%;
+  width: 25%;
+}
+
+.aside-items img {
+  width: 64px;
+  height: 64px;
+}
+
+.aside-items {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  height: 20%;
+  color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.aside-items span {
+  margin-top: 1.5em;
+}
+
+.aside-items:hover {
+  background-color: #5E5E5E;
+}

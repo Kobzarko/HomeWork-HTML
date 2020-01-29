@@ -52,11 +52,14 @@ h2 {
 
 
 
-/* -------grid---- */
+
+
+/* -------grid----    */
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
   grid-gap: 10px;
   padding: 10px;
 }
@@ -69,11 +72,135 @@ h2 {
   padding: 10px;
   text-align: center;
   border-radius: 1em;
-
+  font-family: 'Sigmar One', cursive;
 
 }
 
 .grid-container div:hover {
   border: 2px solid yellow;
 
+}
+
+
+/* change places of items  */
+@media screen and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+
+  }
+}
+
+/* -----------------------footer------------------------- */
+
+footer {
+  background-color: #333333;
+  height: 150px;
+  padding: 10px;
+
+
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #f2f2f2;
+}
+
+.footer-items a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.footer-items a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+/* classes with social links  */
+.links {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 1em;
+
+}
+
+.Fblink {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url(../Icons/fb_gray.png);
+}
+
+.Fblink:hover {
+  background-image: url(../Icons/fb.png);
+}
+
+.Instlink {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url(../Icons/insta_gray.png);
+}
+
+.Instlink:hover {
+  background-image: url(../Icons/insta.png);
+}
+
+.YTlink {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url(../Icons/youtube_gray.png);
+}
+
+.YTlink:hover {
+  background-image: url(../Icons/youtube.png);
+}
+
+/* horizontal line */
+.line {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 2px;
+  background-color: whitesmoke;
+}
+
+/* text in bottom of footer  */
+.copyright {
+  text-align: center;
+  color: #f2f2f2;
 }
